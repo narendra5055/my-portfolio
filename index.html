@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narendra Kumar Bind - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 rounded-lg p-2 hover:bg-blue-50 transition duration-300">Narendra KB</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md px-3 py-2 hover:bg-blue-50">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md px-3 py-2 hover:bg-blue-50">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md px-3 py-2 hover:bg-blue-50">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-md px-3 py-2 hover:bg-blue-50">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner rounded-b-xl">
+            <a href="#about" class="block px-6 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md mx-4">About</a>
+            <a href="#skills" class="block px-6 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md mx-4">Skills</a>
+            <a href="#projects" class="block px-6 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md mx-4">Projects</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md mx-4">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 md:py-32 text-center rounded-b-3xl shadow-lg">
+        <div class="container mx-auto px-6">
+            <img src="https://placehold.co/150x150/3b82f6/ffffff?text=NB" alt="Profile Picture" class="rounded-full w-36 h-36 mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Narendra Kumar Bind</span></h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">A passionate Web Developer | AI Enthusiast | Problem Solver</p>
+            <a href="#projects" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/e0e7ff/3b82f6?text=About+Narendra" alt="About Me" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-lg leading-relaxed text-gray-700">
+                    <p class="mb-4">Hello! I'm Narendra Kumar Bind, an Electronics and Communication Engineering student at the National Institute of Technology, Raipur. With a CGPA of 8.13, I am passionate about web development, AI, and solving complex problems through technology.</p>
+                    <p class="mb-4">My experience includes an AI Intern role at E-Cell IIT Roorkee, where I collaborated on real-life projects applying machine learning and artificial intelligence techniques, including implementing a landmark detection tool using CNNs, RNNs, TensorFlow, and Human 3.6m.</p>
+                    <p>I thrive on learning new technologies and constantly improving my skills. I've also received an offer letter for a Software Development Intern role at Bluestock Fintech and actively participate in coding platforms like LeetCode and GeeksforGeeks, having solved over 300 problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50 rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1: Languages -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Python (basics)</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Technologies/Frameworks -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Technologies & Frameworks</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Developer Tools & Fundamentals -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Tools & Fundamentals</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>VS Code, Matlab</li>
+                        <li>Operating System</li>
+                        <li>DBMS</li>
+                        <li>OOPS</li>
+                        <li>Computer Networks</li>
+                        <li>DSA (Data Structures & Algorithms)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Text to Speech Converter -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/dbeafe/1e40af?text=Text+to+Speech" alt="Text to Speech Converter" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Text to Speech Converter</h3>
+                        <p class="text-gray-700 mb-4">A browser-based application built using HTML, CSS, and JavaScript with the Web Speech API for text-to-audio conversion. Features a clean, responsive UI and optimized for fast performance.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Web Speech API</span>
+                        </div>
+                        <a href="https://github.com/narendra5055" target="_blank" class="text-blue-600 hover:underline font-medium flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 10.5L21 14.25m0 0L17.25 18m3.75-3.75H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card 2: TicTacToe -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/dbeafe/1e40af?text=TicTacToe" alt="TicTacToe Game" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">TicTacToe Game</h3>
+                        <p class="text-gray-700 mb-4">Developed the front-end and wrote the game logic from scratch. Includes features like a score counter and winner teller to enhance the overall user experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/narendra5055" target="_blank" class="text-blue-600 hover:underline font-medium flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 10.5L21 14.25m0 0L17.25 18m3.75-3.75H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card 3: Banking System -->
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/dbeafe/1e40af?text=Banking+System" alt="Banking System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Banking System</h3>
+                        <p class="text-gray-700 mb-4">An application designed to provide banking solutions, enabling banks to manage customer accounts efficiently. Implements various functions related to banking, including deposit and withdrawal operations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">OOPS</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">DSA</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">C++</span>
+                        </div>
+                        <a href="https://github.com/narendra5055" target="_blank" class="text-blue-600 hover:underline font-medium flex items-center">
+                            View Project
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 10.5L21 14.25m0 0L17.25 18m3.75-3.75H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-center mb-12">Get In Touch</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-center text-lg text-gray-700 mb-8">Have a question or want to work together? Feel free to reach out!</p>
+                <form action="mailto:narendra7398bind@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-6 text-center">
+                    <p class="text-gray-700 mb-4">Or connect with me on WhatsApp:</p>
+                    <a href="https://wa.me/917398115055" target="_blank" class="inline-flex items-center bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.38 1.22 4.85L2 22.02l4.24-1.11c1.4-.76 2.97-1.16 4.6-1.16h.03c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm3.39 13.93c-.15.08-.89.44-1.29.47-.39.03-.64.05-.9.03-.25-.02-1.01-.39-1.46-.98-.45-.59-1.07-1.42-1.3-1.81-.23-.39-.02-.36.17-.55.17-.17.39-.45.52-.61.13-.17.17-.29.25-.47.08-.19.04-.36-.02-.5-.06-.14-.54-1.29-.74-1.74-.19-.45-.39-.38-.54-.38-.15 0-.32-.02-.49-.02-.17 0-.44.06-.67.3-.23.25-.88.86-.88 2.09s.9 2.42 1.02 2.59c.12.17 1.76 2.68 4.27 3.73.59.24 1.05.37 1.4.48.56.17 1.07.15 1.47.09.4-.06 1.29-.53 1.47-1.04.18-.51.18-.94.13-1.04-.05-.1-.19-.15-.4-.26z"/></svg>
+                        WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-xl">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Narendra Kumar Bind. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.linkedin.com/in/narendrakumarbind" target="_blank" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+                <a href="https://github.com/narendra5055" target="_blank" class="text-gray-400 hover:text-white transition duration-300">GitHub</a>
+                <a href="mailto:narendra7398bind@gmail.com" class="text-gray-400 hover:text-white transition duration-300">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
