@@ -1,0 +1,49 @@
+/* Custom CSS for smooth scrolling and font */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #334155; /* Dark grey text */
+}
+.section-heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    color: #1e293b; /* Darker heading color */
+}
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px; /* Adjust position below text */
+    width: 60%; /* Underline width */
+    height: 4px; /* Underline thickness */
+    background-color: #3b82f6; /* Blue underline */
+    border-radius: 9999px; /* Rounded underline */
+}
+/* Scroll to top button styling */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place at the bottom */
+    right: 20px; /* Place at the right */
+    z-index: 99; /* Ensure it's on top */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #3b82f6; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded shape */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+#scrollToTopBtn:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
